@@ -1,0 +1,24 @@
+[project]
+name = "yinhu"
+version = "0.1.0"
+description = "Windows security scanner with modern GUI"
+readme = "README.md"
+authors = [
+    { name = "dev", email = "local@dev" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "customtkinter>=5.2.0",
+    "psutil>=5.9.0",
+    "Pillow>=10.0.0",
+]
+
+[project.scripts]
+yinhu = "yinhu.app:main"
+
+[project.gui-scripts]
+yinhu-gui = "yinhu.app:main"
+
+[build-system]
+requires = ["uv_build>=0.11.23,<0.12.0"]
+build-backend = "uv_build"
