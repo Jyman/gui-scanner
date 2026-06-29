@@ -22,3 +22,4 @@ session/
 *.doc
 *.xlsx
 *.csv
+__pycache__/
