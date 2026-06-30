@@ -7,7 +7,7 @@ from ..scanners.base import ScanResult, Severity
 
 def export_html_report(results: dict[str, list[ScanResult]]) -> str:
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    filename = f"yinhu_report_{timestamp}.html"
+    filename = f"system_threat_report_{timestamp}.html"
     path = os.path.join(os.path.expanduser("~"), "Desktop", filename)
 
     all_items: list[tuple[str, ScanResult]] = []
@@ -39,7 +39,7 @@ def export_html_report(results: dict[str, list[ScanResult]]) -> str:
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<title>隐虎扫描报告 - {datetime.now().strftime("%Y-%m-%d %H:%M")}</title>
+<title>系统危险排查报告 - {datetime.now().strftime("%Y-%m-%d %H:%M")}</title>
 <style>
 * {{ margin: 0; padding: 0; box-sizing: border-box; }}
 body {{ background: #1a1b26; color: #c0caf5; font-family: "Microsoft YaHei", "Segoe UI", sans-serif; padding: 32px; }}
@@ -56,7 +56,7 @@ tr:hover {{ background: #2a2e42; }}
 </style>
 </head>
 <body>
-<h1>隐虎 扫描报告</h1>
+<h1>系统危险排查报告</h1>
 <p class="subtitle">生成时间: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}</p>
 <div class="stats">
 <div class="stat-card"><div class="num" style="color:#c0caf5">{total}</div><div class="label">总计</div></div>

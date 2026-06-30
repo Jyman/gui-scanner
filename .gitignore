@@ -23,3 +23,8 @@ session/
 *.xlsx
 *.csv
 __pycache__/
+
+# --- Build artifacts ---
+build/
+dist/
+*.pyc

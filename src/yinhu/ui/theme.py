@@ -1,23 +1,30 @@
-"""Tokyo Night inspired dark theme for the scanner UI."""
+"""Soft paper light theme."""
+
+from __future__ import annotations
 
 import customtkinter as ctk
 
 COLORS = {
-    "bg": "#1a1b26",
-    "sidebar": "#16161e",
-    "panel": "#24283b",
-    "card": "#292e42",
-    "hover": "#33394d",
-    "input": "#1f2335",
-    "text": "#c0caf5",
-    "text_dim": "#565f89",
-    "text_muted": "#3b4261",
-    "accent": "#7aa2f7",
-    "accent_hover": "#89b4fa",
-    "safe": "#9ece6a",
-    "warn": "#e0af68",
-    "danger": "#f7768e",
-    "border": "#292e42",
+    "bg": "#f7f7fb",
+    "sidebar": "#eceef5",
+    "panel": "#ffffff",
+    "card": "#ffffff",
+    "card_alt": "#f1f3fa",
+    "hover": "#e4e7f1",
+    "input": "#ffffff",
+    "text": "#2a2e3d",
+    "text_dim": "#6b7393",
+    "text_muted": "#a3aac4",
+    "accent": "#3b6dd6",
+    "accent_hover": "#2e5cc0",
+    "accent_text": "#ffffff",
+    "btn_text": "#ffffff",
+    "safe": "#3e9a4e",
+    "warn": "#c98a2c",
+    "danger": "#d24c63",
+    "border": "#e1e4ee",
+    "row_even": "#ffffff",
+    "row_odd": "#f5f6fb",
 }
 
 FONTS = {
@@ -30,6 +37,6 @@ FONTS = {
 }
 
 
-def apply_theme():
-    ctk.set_appearance_mode("dark")
+def apply_theme() -> None:
     ctk.set_default_color_theme("blue")
+    ctk.set_appearance_mode("light")
