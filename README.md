@@ -233,3 +233,9 @@ uv run python -m PyInstaller yinhu.spec --clean --noconfirm
 ## License
 
 MIT
+
+---
+
+## 友情链接
+
+- [LINUX DO](https://linux.do/)
